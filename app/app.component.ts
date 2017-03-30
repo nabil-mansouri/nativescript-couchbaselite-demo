@@ -71,6 +71,7 @@ export class AppComponent implements OnInit {
             for (let i = 6; i < 12; i++) {
                 let user = new User();
                 user.name = "user" + i;
+                
                 user.registerAtDate = new Date();
                 user.group.name = "group" + i;
                 dbTest.createDocument(user, "ID" + i);
